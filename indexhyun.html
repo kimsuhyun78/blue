@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩네컷</title>
+    <style>
+          /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+       
+     /* body태그 자체에 css 요소 부여 */
+     body {
+	        font-family: "LeeSeoyun";
+	        margin: 0;
+	        display: flex;
+	        justify-content: center;
+	        background-image: url("./background.png");
+     } 
+         .container {
+           width: 390px;
+           background-color: rgb(73, 73, 218);
+           height: 100%;
+        }
+        .photos {
+            margin-top: 30px;
+        }
+        
+        .photo-frame {
+         background-color: white;
+         margin: 15px 20px;
+         height: 200px;
+         background-size: cover;
+         position: relative;
+        }
+
+        /* 하단 영역 스타일링 */
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .f-title {
+            font-size: 25px;
+            font-weight: 900;
+            color: white;
+        }
+        .f-date {
+            font-size: 15px;
+            font-weight: 500;
+            color: white;
+        }
+
+        #image1 {
+            background-image: url('./IMG5.JPG');
+        }
+
+        #image2 {
+            background-image: url('./IMG6.JPG');
+        }
+
+        #image3 {
+            background-image: url('./IMG07.JPG');
+        }
+
+        #image4 {
+            background-image: url('./IMG8.JPG');
+        }
+
+        .photo_description {
+            color: white;
+            background-color: skyblue;
+            width: fit-content;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            transform: translate(-50%);
+            left: 50%;
+        }
+
+     </style>
+</head>
+<body>
+   <div class="container">
+      <div class="photos">
+        <div id="image1" class="photo-frame">
+            <span id="desc1" class="photo_description">
+                Hi! My name is Blue!💙
+            </span>
+        </div>
+         <div id="image2" class="photo-frame">
+            <span id="desc2" class="photo_description">
+                Carpe Diem✨
+            </span>
+         </div>
+         <div id="image3" class="photo-frame">
+            <span id="desc3" class="photo_description">
+                my strength💪🏻
+            </span>
+        </div>
+         <div id="image4" class="photo-frame">
+            <span id="desc4" class="photo_description">
+                my 2023 february challenge❤️‍🔥
+            </span>
+         </div>
+      </div>
+      <div class="footer">
+         <p class="f-title">@records_mm_blue </p>
+         <p class="f-date">2023 스파르타코딩클럽</p>
+   </div>
+</div>
+</body>
+</html>
